@@ -8,10 +8,10 @@ def safety_rated_locations():
 
     try:
         response = amadeus.safety.safety_rated_locations.by_square.get(
-            north=37.810980,
-            west=-122.483716,
-            south=37.732007,
-            east=-122.370076
+            north=40.742278,
+            west=-74.105833,
+            south=40.701278,
+            east=-73.971973
         )
         print(response.data)
         return response.data
